@@ -7,13 +7,22 @@
 <br>
 OdoriFy is an open-source web server with Deep Neural Network-based prediction models coupled with explainable Artificial Intelligence functionalities, developed in an effort to provide the users with a one-stop destination for all their problems pertaining to olfaction. OdoriFy is highly versatile, capable of deorphanizing human olfactory receptors (Odor Finder), odorant prediction (Odorant Predictor), identification of Responsive Olfactory Receptors for a given ligand/s (OR Finder), and Odorant-OR Pair Analysis. With OdoriFy, we aim to provide a simplified and hassle-free environment for users.
 
-**Webserver is freely available at [https://odorify.ahujalab.iiitd.edu.in/](http://odorify.ahujalab.iiitd.edu.in/olfy/)**
+**Webserver is freely available at [https://odorify.ahujalab.iiitd.edu.in/](https://odorify.ahujalab.iiitd.edu.in/olfy/)**
+
+Entire webserver code is avaialble at [https://github.com/the-ahuja-lab/Odorify-webserver](https://github.com/the-ahuja-lab/Odorify-webserver)
 
 
 ## Index
+* [Prediction Engines](#prediction-engines-)
+* [Dependencies](#dependencies-)
+* [Installation Guidelines](#installation-guidelines-)
+* [How to use OdoriFy](#how-to-use-odorify-)
+* [Performance](#performance-)
+* [Functionalities](#functionalities-)
+* [Citing](#citing-)
 
 
-## Prediction Engines:
+## Prediction Engines: [&uarr;](#index-)
 
 1.  **Odorant Predictor:** OdoriFy allows users to predict or verify whether the user supplemented chemicals qualifies for the odorant properties. It also performs the sub-structure analysis and highlights atoms indispensable for the predicted decision. 
 <u>Input:</u> Chemical (SMILES)
@@ -30,7 +39,7 @@ OdoriFy is an open-source web server with Deep Neural Network-based prediction m
 <div align="center">
 <img src="https://imgur.com/lEmN6Mi.png" alt="Architecture" width="650" height="480"></div>
 
-## Dependencies
+## Dependencies [&uarr;](#prediction-engines-)
 1.  Python v.3.4.6 or higher
 2.  TensorFlow v1.12
 3.  rdkit v.2018.09.2
@@ -39,13 +48,14 @@ OdoriFy is an open-source web server with Deep Neural Network-based prediction m
 6. Captum
 
 
-## Installation Guidelines
+## Installation Guidelines [&uarr;](#dependencies-)
  1. Install conda via: https://www.anaconda.com/products/individual
  2. Make the installer an executable file via: chmod u+x installer
  3. Run the installer via: ./installer
 
-## How to use OdoriFy
+## How to use OdoriFy [&uarr;](#installation-guidelines-)
 **Step 1: Build a model**
+
 To build model from own data, Write a config.cfg file in the format specified below:
 ```
 	[Task]
@@ -78,16 +88,20 @@ For finding predictions based on this trained model, Write a config.cfg file sim
 	result_file = data/output.csv
 ```
 Now run prediction engines via:
+
 `python odor-finder.py config-prediction.cfg`	
+
 `python or-finder1.py config-prediction.cfg`
+
 `python or-finder2.py config-prediction.cfg`
+
  `python odorant-or.py config-prediction.cfg`
 
-## Performance 
+## Performance [&uarr;](#how-to-use-odorify-)
 
 
-## Functionalities
+## Functionalities [&uarr;](#performance-)
 1.  It is a freely available webserver
 2.  It comes with an additional functionality to recieve results over email 
 
-## Citing
+## Citing [&uarr;](#functionalities-)
