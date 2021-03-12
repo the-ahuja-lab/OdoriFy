@@ -15,11 +15,8 @@ Entire webserver code is avaialble at [https://github.com/the-ahuja-lab/Odorify-
 ## Index
 * [Prediction Engines](#prediction-engines-)
 * [Dependencies](#dependencies-)
-* [Installation Guidelines](#installation-guidelines-)
 * [How to use OdoriFy](#how-to-use-odorify-)
-* [Performance](#performance-)
-* [Functionalities](#functionalities-)
-* [Citing](#citing-)
+
 
 
 ## Prediction Engines: [&uarr;](#index-)
@@ -48,12 +45,7 @@ Entire webserver code is avaialble at [https://github.com/the-ahuja-lab/Odorify-
 6. Captum
 
 
-## Installation Guidelines [&uarr;](#dependencies-)
- 1. Install conda via: https://www.anaconda.com/products/individual
- 2. Make the installer an executable file via: chmod u+x installer
- 3. Run the installer via: ./installer
-
-## How to use OdoriFy [&uarr;](#installation-guidelines-)
+## How to use OdoriFy [&uarr;](#dependencies-)
 **Step 1: Build a model**
 
 To build model from own data, Write a config.cfg file in the format specified below:
@@ -97,11 +89,3 @@ Now run prediction engines via:
 
  `python odorant-or.py config-prediction.cfg`
 
-## Performance [&uarr;](#how-to-use-odorify-)
-
-
-## Functionalities [&uarr;](#performance-)
-1.  It is a freely available webserver
-2.  It comes with an additional functionality to recieve results over email 
-
-## Citing [&uarr;](#functionalities-)
