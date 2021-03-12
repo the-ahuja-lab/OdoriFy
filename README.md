@@ -34,7 +34,7 @@ Entire webserver code is avaialble at [https://github.com/the-ahuja-lab/Odorify-
  <u>Input:</u> Chemical (SMILES) and Protein sequences (FASTA Format).
 
 <div align="center">
-<img src="https://imgur.com/lEmN6Mi.png" alt="Architecture" width="650" height="480"></div>
+<img src="https://imgur.com/22h9n9x.png" alt="Architecture" width="650" height="480"></div>
 
 ## Dependencies [&uarr;](#prediction-engines-)
 1.  Python v.3.4.6 or higher
